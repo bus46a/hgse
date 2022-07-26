@@ -1,16 +1,16 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: ray
+  name: jdfrs
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: ray
+      app: jdfrs
   template:
     metadata:
       labels:
-        app: ray
+        app: jdfrs
     spec:
       containers:
       - image: okteto.dev/ray:latest
@@ -25,10 +25,10 @@ spec:
         - name: Vless_UUID
           value: "f8bfb621-6728-4a6c-ae69-2106cd3d7c8a"
         - name: Vless_Path
-          value: "/vl555"
+          value: "/vdhd5"
         - name: Vmess_UUID
-          value: "f8bfb621-6728-4a6c-ae69-2106cd3d7c8a"
+          value: "72398242-d14b-441c-a96e-d242738237a5"
         - name: Vmess_Path
-          value: "/vm666"
+          value: "/vdhd5"
         - name: Share_Path
           value: "/v2link"
